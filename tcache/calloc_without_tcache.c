@@ -10,7 +10,7 @@ int main(){
 	char *temp1 = calloc(1,100);
 	char *temp2 = calloc(1,100);
 	free(temp1);
-	char *temp3 = calloc(1,50);
+	char *temp3 = calloc(1,100);
 	getchar();
 	return 0;
 }
