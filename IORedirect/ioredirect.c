@@ -18,8 +18,8 @@ int main(){
 	argvlist[1] = 0;
 	if(fork() == 0){
 		close(0);
-		open("/bin/sh", O_RDONLY);
-		execve("/bin/cat", argvlist, NULL);
+		open("/bin/sh", O_RDONLY); //fd sticks to zero.
+		execve("/bin/cat", argvlist, NULL); //duped to child process.
 	}
 	return 0;
 }
